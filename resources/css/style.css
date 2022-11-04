@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: #505050;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1, .subtitle{
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #0e1f3b;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+}
+
+.article-featured-date, 
+.article-recent-date, 
+.article-current-date {
+    font-size: 0.75rem;
+    order: -1;
+}
+
+.article-featured-title, 
+.article-current-title,
+.about-me-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    
+}
+.article-current-title,
+.about-me-title {
+    color: black;
+}
+
+.article-featured-content {
+    font-size: 0.75rem;
+    max-width: 600px;
+}
+
+.article-recent-title {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 700;
+    color: black;
+}
+
+.centered {
+    text-align: center;
+}
+
+.article-recent-content,
+.article-current-content,
+.about-me-content {
+   font-size: 0.75rem;
+   
+}
+
+.article-featured-readmore,
+.article-recent-readmore,
+.view-more{
+    font-size: 0.75rem;
+    
+    text-transform: uppercase;
+}
+
+.article-featured-readmore {
+    color: whitesmoke;
+}
+
+
+.article-recent-readmore,
+.view-more {
+    color: #505050;
+}
+
+.view-more {
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.article-current-subtitle,
+.about-me-subtitle {
+    font-weight: 700;
+    color: black;
+    margin: 0;
+}
+
+
+.article-featured-readmore:hover,
+.article-featured-readmore:focus,
+.article-recent-readmore:hover,
+.article-recent-readmore:focus,
+.view-more:hover,
+.view-more:focus {
+    color: #1792d2;
+}
+
+.about-me-content + p{
+    margin: 0;
+}
+
+
+
+
+/* =================
+    Layout
+   ================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-nav {
+    justify-content: space-between;
+    align-items:  center;
+}
+
+header {
+    padding: 2em 0 1em;
+    background-color: #f3efef;
+}
+
+.article-featured {
+    padding: 5em 0 1.25em 0;
+    background-image: url("/resources/images/blockchain.jpg");
+    background-color: #e90a0a;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.container-articles,
+.container-articles-more {
+    padding: 1rem 0 0;
+}
+
+.article-recent {
+    max-width: 600px;
+    margin: 0 auto 1rem;
+    padding: 1rem 0;
+}
+
+.article-recent-image {
+    order: -1;
+}
+
+.about-me-image {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.about-me-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 0 2rem;
+}
+
+.about-me-secondary {
+    order: -1;
+}
+
+.about-me-post {
+    background-color: #f3efef;
+    padding: 1.25rem 1.25rem 0.75rem;
+    margin-bottom: 2rem;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+    background-color: #0e1f3b;
+    margin: 0;
+    color: rgba(255,255,255, .65);
+    padding: 1rem;
+    line-height: 0.3;
+}
+
+.hidden{
+    display: none;
+}
+
+/* navigation */
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-list-item {
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #707070;
+    padding: .25em 0;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover,
+.current-page:focus {
+    color: #707070;
+}
+
+
+
+
+/* =================
+    Media queries 
+   ================= */
+@media (min-width: 600px) {
+    .container-nav {
+        flex-direction:row;
+    }
+
+    h1, .subtitle{
+        text-align: left;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 1em;
+    }
+
+    .nav-list-item {
+       margin-left: 1em;
+    }
+
+    .article-featured-date, 
+    .article-recent-date,
+    .article-current-date {
+        font-size: 0.75rem;
+    }
+    
+    .about-me-image {
+        max-width: 150px;
+    }
+
+    .article-featured-title,
+    .article-current-title {
+        font-size: 2rem;
+    }
+    
+    .article-featured-content, 
+    .article-recent-content,
+    .article-current-content, 
+    .about-me-content,
+    .article-readmore {
+        font-size: 0.90rem;
+      
+    }
+
+    .article-current-subtitle,
+    .article-recent-title,
+    .about-me-subtitle {
+        font-size: 1.25rem;
+    }
+    .article-featured {
+        padding: 10rem 0 3rem;
+        
+    }
+    .container-articles {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .about-me-intro {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    footer {
+        font-size: 0.75rem;
+    }
+}
