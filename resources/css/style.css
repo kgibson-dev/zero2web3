@@ -9,7 +9,7 @@ body {
     font-family: 'JetBrains Mono', monospace;
     font-size: 16px;
     color: #505050;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 img {
@@ -174,16 +174,24 @@ header {
 .container-articles,
 .container-articles-more {
     padding: 1rem 0 0;
+   
+}
+
+.container-articles{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .article-recent {
     max-width: 600px;
     margin: 0 auto 1rem;
     padding: 1rem 0;
+    /* justify-content: space-between; */
 }
 
 .article-recent-image {
     order: -1;
+    /* margin: 0; */
 }
 
 .about-me-image {
@@ -316,9 +324,15 @@ footer {
         padding: 10rem 0 3rem;
         
     }
+    
     .container-articles {
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 1.5em;
+    }
+
+    .article-recent {
+        width: 100%;
+        flex: 1 200px;
     }
 
     .about-me-intro {
