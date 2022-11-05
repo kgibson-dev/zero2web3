@@ -86,7 +86,6 @@ h1 {
 .article-recent-readmore,
 .view-more{
     font-size: 0.75rem;
-    
     text-transform: uppercase;
 }
 
@@ -196,7 +195,7 @@ header {
 
 .about-me-image {
     border-radius: 50%;
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .about-me-intro {
