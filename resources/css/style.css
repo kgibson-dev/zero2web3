@@ -185,17 +185,16 @@ header {
     max-width: 600px;
     margin: 0 auto 1rem;
     padding: 1rem 0;
-    /* justify-content: space-between; */
 }
 
 .article-recent-image {
     order: -1;
-    /* margin: 0; */
 }
 
 .about-me-image {
     border-radius: 50%;
-    max-width: 80px;
+    max-width: 100px;
+    border: 2px solid;
 }
 
 .about-me-intro {
@@ -203,6 +202,8 @@ header {
     flex-direction: column;
     justify-content: space-between;
     margin: 3rem 0 2rem;
+    align-items: center;
+    text-align: center;
 }
 
 .about-me-secondary {
@@ -214,7 +215,6 @@ header {
     padding: 1.25rem 1.25rem 0.75rem;
     margin-bottom: 2rem;
 }
-
 
 footer {
     text-align: center;
@@ -237,6 +237,7 @@ footer {
     padding: 0;
     align-items: center;
     text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
 .nav-list-item {
@@ -311,7 +312,6 @@ footer {
     .about-me-content,
     .article-readmore {
         font-size: 0.90rem;
-      
     }
 
     .article-current-subtitle,
@@ -321,7 +321,6 @@ footer {
     }
     .article-featured {
         padding: 10rem 0 3rem;
-        
     }
     
     .container-articles {
@@ -337,7 +336,7 @@ footer {
     .about-me-intro {
         flex-direction: row;
         gap: 2rem;
-        align-items: center;
+        text-align: left;
     }
     
     footer {
