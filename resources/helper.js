@@ -13,15 +13,17 @@ export function renderArticles() {
 	let articleCount = 0
 	
 		articlesArray.reverse().forEach(function (article) {
+			// Ensure 3 articles always appear in recent posts
 			if (articleCount < 3) {
 				if (
-					article.featured === "no" &&
-					article.id != localStorage.getItem("id")
+					article.featured === "no" && // Ensure article is not a featured article
+					article.id != localStorage.getItem("id") // Don't render if the article id is in localstorage
 				) {
 					mainArticles.innerHTML += getArticleHTML(article)
 					articleCount++
 				}
 			}
+			// Render the home page feature article
 			if (article.featured === "yes") {
 				if (document.getElementById("article-featured")) {
 					document.getElementById("article-featured").innerHTML = `
@@ -40,8 +42,6 @@ export function renderArticles() {
 		})
 	
 	} 
-
-
 
 // This function renders all articles when the view more link is clicked.  It is called from listenForClicks function
 export function renderMoreArticles() {
