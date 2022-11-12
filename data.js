@@ -25,7 +25,7 @@ export const articlesArray = [
 		image: "/resources/images/blockchain-article.jpg",
 		altText: "man holding post-it note with block chain written on it",
 		readmelink: "featured-article.html",
-		featured: "yes",
+		featured: "no",
 		subTitle1: "Why a chain?",
 		paragraph1:
 			"At a high level, a block is composed of  a list of data, and the “chain” is a stack of the blocks of data continually that grows over a specific period of time. If a transaction is embedded deep in a blockchain (i.e., earlier in the chain’s history), it becomes exceptionally challenging to alter that data — making blockchains a unique medium for storing valuable data.",
@@ -91,7 +91,7 @@ export const articlesArray = [
 		image: "/resources/images/nft.jpg",
 		altText: "a cartoon ape with glasses and a red hawaian shirt",
 		readmelink: "featured-article.html",
-		featured: "no",
+		featured: "yes",
 		subTitle1: "How Is an NFT Different from Cryptocurrency?",
 		paragraph1:
 			"NFT stands for non-fungible token. It’s generally built using the same kind of programming as cryptocurrency, like Bitcoin or Ethereum, but that’s where the similarity ends. Physical money and cryptocurrencies are “fungible,” meaning they can be traded or exchanged for one another. They’re also equal in value—one dollar is always worth another dollar; one Bitcoin is always equal to another Bitcoin. Crypto’s fungibility makes it a trusted means of conducting transactions on the blockchain.",
