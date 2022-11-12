@@ -1,3 +1,5 @@
-import { renderMainArticles } from "/resources/helper.js"
-import { articlesArray } from "/data.js"
-renderMainArticles()
+import { renderFeatureArticles, renderArticles, listenForClicks } from "/resources/helper.js"
+
+renderArticles()
+listenForClicks()
+renderFeatureArticles(localStorage.getItem("id"))

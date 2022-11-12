@@ -8,7 +8,13 @@ export const articlesArray = [
 		image: "/resources/images/blockchain.jpg",
 		altText: "man holding post-it note with block chain written on it",
 		readmelink: "featured-article.html",
-		featured: "yes",
+		featured: "no",
+		subTitle1: "How I stay committed to learning",
+		paragraph1:
+			"I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects. While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.",
+		subTitle2: "How I got started",
+		paragraph2:
+			"I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words. That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.",
 	},
 	{
 		title: "Blockchains",
@@ -18,8 +24,14 @@ export const articlesArray = [
 		date: "July 30, 2022",
 		image: "/resources/images/blockchain-article.jpg",
 		altText: "man holding post-it note with block chain written on it",
-		readmelink: "#",
-		featured: "no",
+		readmelink: "featured-article.html",
+		featured: "yes",
+		subTitle1: "Why a chain?",
+		paragraph1:
+			"At a high level, a block is composed of  a list of data, and the “chain” is a stack of the blocks of data continually that grows over a specific period of time. If a transaction is embedded deep in a blockchain (i.e., earlier in the chain’s history), it becomes exceptionally challenging to alter that data — making blockchains a unique medium for storing valuable data.",
+		subTitle2: "Why blockchain was created?",
+		paragraph2:
+			"One of the core components of blockchains that enabled them to materialize is their use of consensus. But to understand consensus, we need a brief history of why Satoshi Nakamoto, the anonymous creator of Bitcoin, created a blockchain in the first place. And incidentally, it gives an excellent overview of a significant problem that blockchains solve. ",
 	},
 	{
 		title: "Ethereum",
@@ -29,8 +41,12 @@ export const articlesArray = [
 		date: "August 6, 2022",
 		image: "/resources/images/ethereum.jpg",
 		altText: "ethereum logo",
-		readmelink: "#",
+		readmelink: "featured-article.html",
 		featured: "no",
+		subTitle1: "",
+		paragraph1: "",
+		subTitle2: "",
+		paragraph2: "",
 	},
 	{
 		title: "Smart Contracts",
@@ -40,8 +56,14 @@ export const articlesArray = [
 		date: "August 13, 2022",
 		image: "/resources/images/smartcontract.jpg",
 		altText: "ethereum logo connected to lots of smaller ethereum logos",
-		readmelink: "#",
+		readmelink: "featured-article.html",
 		featured: "no",
+		subTitle1: "Automatic execution",
+		paragraph1:
+			"One of the most significant benefits smart contracts have over regular contracts is that the outcome is automatically executed when the contract conditions are realized. There is no need to wait for a human to execute the result. In other words: smart contracts remove the need for trust.",
+		subTitle2: "Predictable outcomes",
+		paragraph2:
+			"The human factor is one of the biggest points of failure with traditional contracts. For example, two individual judges may interpret a traditional contract in different ways. Their interpretations could lead to different decisions getting made and disparate outcomes. Smart contracts remove the possibility of different interpretations. Instead, smart contracts execute precisely based on the conditions written within the contract's code. This precision means that given the same circumstances, the smart contract will produce the same result",
 	},
 	{
 		title: "DAPP",
@@ -51,8 +73,14 @@ export const articlesArray = [
 		date: "August 20, 2022",
 		image: "/resources/images/dapps.webp",
 		altText: "the word DAPP with a man pointing at a circle",
-		readmelink: "#",
+		readmelink: "featured-article.html",
 		featured: "no",
+		subTitle1: "How dapps work",
+		paragraph1:
+			"Dapps have their backend code (smart contracts) running on a decentralized network and not a centralized server. They use the Ethereum blockchain for data storage and smart contracts for their app logic.  Once dapps are deployed on the Ethereum network you can't change them. Dapps can be decentralized because they are controlled by the logic written into the contract, not an individual or a company.",
+		subTitle2: "Ethereum Dapps: The Backbone of Web 3.0",
+		paragraph2:
+			"Since the creation of the Internet, the amount of information and human interaction has exploded. We're able to produce and consume information at near infinite levels. Unfortunately, the ability to control this information has become heavily centralized over time. This includes information about your social life, health, finances, and much more. Those who control this information are the ultimate owners of it and can use it as they see fit.",
 	},
 	{
 		title: "NFT",
@@ -62,8 +90,14 @@ export const articlesArray = [
 		date: "August 27, 2022",
 		image: "/resources/images/nft.jpg",
 		altText: "a cartoon ape with glasses and a red hawaian shirt",
-		readmelink: "#",
+		readmelink: "featured-article.html",
 		featured: "no",
+		subTitle1: "How Is an NFT Different from Cryptocurrency?",
+		paragraph1:
+			"NFT stands for non-fungible token. It’s generally built using the same kind of programming as cryptocurrency, like Bitcoin or Ethereum, but that’s where the similarity ends. Physical money and cryptocurrencies are “fungible,” meaning they can be traded or exchanged for one another. They’re also equal in value—one dollar is always worth another dollar; one Bitcoin is always equal to another Bitcoin. Crypto’s fungibility makes it a trusted means of conducting transactions on the blockchain.",
+		subTitle2: "How Does an NFT Work?",
+		paragraph2:
+			"NFTs exist on a blockchain, which is a distributed public ledger that records transactions. You’re probably most familiar with blockchain as the underlying process that makes cryptocurrencies possible. Specifically, NFTs are typically held on the Ethereum blockchain, although other blockchains support them as well.",
 	},
 	{
 		title: "DeFi",
@@ -74,7 +108,13 @@ export const articlesArray = [
 		image: "/resources/images/DeFi.jpg",
 		altText:
 			"The words DeFi and decentralised finance on a blue background",
-		readmelink: "#",
+		readmelink: "featured-article.html",
 		featured: "no",
+		subTitle1: "How Does DeFi Work?",
+		paragraph1:
+			"Decentralized finance uses the blockchain technology that cryptocurrencies use. A blockchain is a distributed and secured database or ledger. Applications called dApps are used to handle transactions and run the blockchain. In the blockchain, transactions are recorded in blocks and then verified by other users. If these verifiers agree on a transaction, the block is closed and encrypted; another block is created that has information about the previous block within it.",
+		subTitle2: "Uses of DeFi",
+		paragraph2:
+			"Peer-to-peer (P2P) financial transactions are one of the core premises behind DeFi. A P2P DeFi transaction is where two parties agree to exchange cryptocurrency for goods or services without a third party involved. In DeFi, P2P can meet an individual's loan needs, and an algorithm would matches peers that agree on the lender's terms, and a loan is issued. Payments from P2P are made via a decentralized application, or dApp, and follow the same process in the blockchain.",
 	},
 ]
